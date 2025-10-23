@@ -364,37 +364,36 @@ body {
   }
 
   .navbar-nav {
-  position: fixed;
-  top: 72px;
-  right: -320px;
-  width: 280px;
-  height: calc(100% - 72px);
-  background-color: #fff6d7; /* 🔹 solid background, sama dengan warna utama body */
-  padding: 1.4rem;
-  gap: 1rem;
-  flex-direction: column;
-  transition: right 0.3s ease;
-  box-shadow: -6px 10px 30px rgba(0, 0, 0, 0.15);
-  border-left: 1px solid rgba(0, 0, 0, 0.05);
-  z-index: 9999; /* 🔹 pastikan tampil di atas elemen lain */
-}
+    position: fixed;
+    top: 0; /* mulai dari paling atas */
+    right: -320px; /* tersembunyi di luar layar */
+    width: 280px;
+    height: 100vh; /* penuh seluruh tinggi layar */
+    background-color: #fff3a3; /* warna sidebar solid */
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    transition: right 0.3s ease;
+    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 9999;
 
-  .navbar-nav.active {
-    right: 0;
+    /* pastikan tidak transparan */
+    background-image: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
   }
 
   .navbar-nav a {
     color: #111;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
     display: block;
-    padding: 0.6rem 0.4rem;
-    border-radius: 6px;
-    transition: background 0.3s ease, color 0.3s ease;
   }
 
-  .navbar-nav a:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--accent-dark);
+  .navbar-nav.active {
+    right: 0; /* muncul ke layar */
   }
 
   .cards-grid {
@@ -411,7 +410,6 @@ body {
     font-size: 1.8rem;
   }
 }
-
 
 /* small polish */
 a {
