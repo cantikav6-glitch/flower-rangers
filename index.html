@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Rangers</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Flower<span>Rangers</span>.</a>
+
+      <div class="navbar-nav" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search" title="Search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart" title="Cart"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu" aria-label="Open menu"
+          ><i data-feather="menu"></i
+        ></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home" role="banner" aria-label="Hero">
+      <main class="content">
+        <h1>
+          Bring Colors to Life’s Sweet Moments with
+          <span>Flowers</span>
+        </h1>
+        <p>
+          Flower Rangers menyediakan rangkaian bunga segar yang ditata rapi
+          untuk setiap momen spesial — kado, dekorasi, hingga acara. Pilih
+          koleksi kami dan buat hari seseorang menjadi lebih berwarna.
+        </p>
+        <div class="hero-cta">
+          <a href="#menu" class="cta">Lihat Menu</a>
+          <a href="#contact" class="cta ghost">Hubungi Kami</a>
+        </div>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section -->
+    <section class="section" id="about" aria-label="About">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Tentang Flower Rangers</h2>
+            <p>
+              Kami adalah toko bunga lokal yang fokus pada kualitas, kesegaran,
+              dan desain personal. Setiap buket dirangkai dengan cinta dan
+              perhatian agar pesan Anda tersampaikan melalui bunga.
+            </p>
+            <ul class="features">
+              <li><i data-feather="check-circle"></i> Bunga segar tiap hari</li>
+              <li><i data-feather="clock"></i> Pengiriman cepat & aman</li>
+              <li><i data-feather="award"></i> Desain profesional</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img src="img/bouquet1.jpg" alt="Bouquet sample" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="section" id="menu" aria-label="Menu">
+      <div class="container">
+        <h2 class="section-title">Our Collections</h2>
+        <p class="section-sub">
+          Pilih buket sesuai suasana — Anniversary, Birthday, atau Thank You.
+        </p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <img src="img/bouquet1.jpg" alt="Bouquet A" />
+            <div class="card-body">
+              <h3>Bouquet Elegance</h3>
+              <p class="price">Rp 150.000</p>
+              <p class="desc">
+                Rangkaian mawar dan baby breath, cocok untuk hadiah.
+              </p>
+              <div class="card-actions">
+                <button class="btn add-cart">Tambah ke Keranjang</button>
+                <button class="btn outline">Detail</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/bouquet2.jpg" alt="Bouquet B" />
+            <div class="card-body">
+              <h3>Sunny Mix</h3>
+              <p class="price">Rp 120.000</p>
+              <p class="desc">Warni-warni cerah, sempurna untuk ulang tahun.</p>
+              <div class="card-actions">
+                <button class="btn add-cart">Tambah ke Keranjang</button>
+                <button class="btn outline">Detail</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="img/bouquet3.jpg" alt="Bouquet C" />
+            <div class="card-body">
+              <h3>Classic White</h3>
+              <p class="price">Rp 180.000</p>
+              <p class="desc">
+                Kombinasi lily dan tulip putih untuk nuansa elegan.
+              </p>
+              <div class="card-actions">
+                <button class="btn add-cart">Tambah ke Keranjang</button>
+                <button class="btn outline">Detail</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact" aria-label="Contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2>Hubungi Kami</h2>
+          <p>
+            Ada pertanyaan atau pemesanan khusus? Isi formulir, atau hubungi via
+            telepon/WA.
+          </p>
+          <ul class="contact-list">
+            <li><i data-feather="phone"></i> +62 812-3456-7890</li>
+            <li><i data-feather="mail"></i> hello@flowerrangers.id</li>
+            <li><i data-feather="map-pin"></i> Jl. Mekar No. 12, Jakarta</li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Nama
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Nama Anda"
+            />
+          </label>
+          <label>
+            Email
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="email@domain.com"
+            />
+          </label>
+          <label>
+            Pesan
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Tulis pesan..."
+            ></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Kirim Pesan</button>
+            <button type="reset" class="btn outline">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="logo-footer">Flower<span>Rangers</span></p>
+          <p>© <span id="year"></span> Flower Rangers. All rights reserved.</p>
+        </div>
+
+        <div>
+          <p>Follow us</p>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"
+              ><i data-feather="instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i data-feather="facebook"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
