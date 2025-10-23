@@ -364,20 +364,20 @@ body {
   }
 
   .navbar-nav {
-    position: fixed;
-    top: 72px;
-    right: -320px;
-    width: 280px;
-    height: calc(100% - 72px);
-    background: rgba(255, 246, 215, 0.95); /* 🔹 beri background lembut */
-    backdrop-filter: blur(8px); /* 🔹 efek kaca */
-    padding: 1.4rem;
-    gap: 1rem;
-    flex-direction: column;
-    transition: right 0.3s ease;
-    box-shadow: -6px 10px 30px rgba(0, 0, 0, 0.15);
-    border-left: 1px solid rgba(0, 0, 0, 0.05);
-  }
+  position: fixed;
+  top: 72px;
+  right: -320px;
+  width: 280px;
+  height: calc(100% - 72px);
+  background-color: #fff6d7; /* 🔹 solid background, sama dengan warna utama body */
+  padding: 1.4rem;
+  gap: 1rem;
+  flex-direction: column;
+  transition: right 0.3s ease;
+  box-shadow: -6px 10px 30px rgba(0, 0, 0, 0.15);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  z-index: 9999; /* 🔹 pastikan tampil di atas elemen lain */
+}
 
   .navbar-nav.active {
     right: 0;
