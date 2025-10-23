@@ -369,8 +369,8 @@ body {
     right: -320px;
     width: 280px;
     height: calc(100% - 72px);
-    background: rgba(255, 246, 215, 0.95); /* ← ganti agar semi-transparan lembut */
-    backdrop-filter: blur(8px); /* efek kaca lembut */
+    background: rgba(255, 246, 215, 0.95); /* 🔹 beri background lembut */
+    backdrop-filter: blur(8px); /* 🔹 efek kaca */
     padding: 1.4rem;
     gap: 1rem;
     flex-direction: column;
@@ -396,7 +396,22 @@ body {
     background: rgba(0, 0, 0, 0.05);
     color: var(--accent-dark);
   }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 60vh;
+    padding-top: 2.4rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 }
+
 
 /* small polish */
 a {
