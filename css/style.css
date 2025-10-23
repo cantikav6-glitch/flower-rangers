@@ -362,38 +362,39 @@ body {
   #hamburger-menu {
     display: inline-block;
   }
+
   .navbar-nav {
     position: fixed;
     top: 72px;
     right: -320px;
     width: 280px;
     height: calc(100% - 72px);
-    background: var(--primary);
+    background: rgba(255, 246, 215, 0.95); /* ← ganti agar semi-transparan lembut */
+    backdrop-filter: blur(8px); /* efek kaca lembut */
     padding: 1.4rem;
     gap: 1rem;
     flex-direction: column;
-    transition: right 0.28s ease;
-    box-shadow: -6px 10px 30px rgba(0, 0, 0, 0.12);
+    transition: right 0.3s ease;
+    box-shadow: -6px 10px 30px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
   }
+
+  .navbar-nav.active {
+    right: 0;
+  }
+
   .navbar-nav a {
     color: #111;
     font-size: 1.1rem;
     display: block;
-    padding: 0.6rem 0;
+    padding: 0.6rem 0.4rem;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
   }
-  .navbar-nav.active {
-    right: 0;
-  }
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero {
-    min-height: 60vh;
-    padding-top: 2.4rem;
-    padding-bottom: 3rem;
-  }
-  .hero h1 {
-    font-size: 1.8rem;
+
+  .navbar-nav a:hover {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--accent-dark);
   }
 }
 
